@@ -15,18 +15,19 @@
         .container {
             border: 2px solid;
             padding: 2px;
+            gap: 10px;
             height: 100vh;
             display: flex;
-            flex-direction: column;
-            align-items: baseline;
-
-
+            align-items: start;
         }
 
         .container>div {
             padding: 30px;
             border: 2px solid;
-            margin: 10px;
+            /* width: 700px; */
+            flex-shrink: 1;
+            flex-grow: 1;
+            flex-basis: auto;
         }
 
         .item1 {
@@ -39,10 +40,12 @@
 
         .item3 {
             background-color: bisque;
+
         }
 
         .item4 {
             background-color: burlywood;
+            align-self: flex-end;
         }
 
         .item5 {
@@ -53,12 +56,31 @@
 
 <body>
     <div class="container">
-        <div class="item1"></div>
-        <div class="item2"></div>
-        <div class="item3"></div>
-        <div class="item4"></div>
-        <div class="item5"></div>
+        <div class="item1">Item-1</div>
+        <div class="item2">Item-2</div>
+        <div class="item3">Item-3</div>
+        <div class="item4">Item-4</div>
+        <div class="item5">Item-5</div>
     </div>
 </body>
 
 </html>
+
+<!-- 
+display flex;
+direction row
+justify-content start
+align-items
+align-content
+gap
+flex wrap
+flex-flow 
+
+Child Properties
+flex-grow
+flex-basis
+flex-shrink
+order
+align self
+flex
+-->
